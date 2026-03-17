@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique - Atelier Couture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h1 class="logo">Atelier Couture</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/+22940651598" target="_blank" class="btn">Commander</a>
+  </div>
+</header>
+
+<section class="services container">
+  <h2>Notre Boutique de Pagnes</h2>
+  <div class="services-grid">
+
+    <div class="card">
+      <img src="pagne1.jpg" loading="lazy" alt="">
+      <h3>Pagne Wax</h3>
+      <p>Prix : 15 000 FCFA</p>
+      <a href="https://wa.me/+22940651598?text=Bonjour%20je%20veux%20commander%20le%20Pagne%20Wax" target="_blank" class="btn">
+        Commander sur WhatsApp
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="pagne2.jpg" loading="lazy" alt="">
+      <h3>Pagne Kente</h3>
+      <p>Prix : 18 000 FCFA</p>
+      <a href="https://wa.me/+22940651598?text=Bonjour%20je%20veux%20commander%20le%20Pagne%20Kente" target="_blank" class="btn">
+        Commander sur WhatsApp
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="pagne3.jpg" loading="lazy" alt="">
+      <h3>Pagne Moderne</h3>
+      <p>Prix : 12 000 FCFA</p>
+      <a href="https://wa.me/+22940651598?text=Bonjour%20je%20veux%20commander%20le%20Pagne%20Moderne" target="_blank" class="btn">
+        Commander sur WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 - Atelier Couture</p>
+</footer>
+<!-- Bouton retour en haut -->
+<button id="backToTop">⬆</button>
+
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>

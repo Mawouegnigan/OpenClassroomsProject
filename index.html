@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Atelier Couture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atelier de couture : retouches, créations et couture sur mesure.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h1 class="logo">Atelier Couture</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/2250700000000" target="_blank" class="btn">Prendre RDV</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Donnez une seconde vie à vos vêtements</h2>
+    <p>Retouches, créations et couture sur mesure</p>
+    <a href="#services" class="btn">Voir nos services</a>
+  </div>
+</section>
+
+<section id="services" class="services container">
+  <h2>Nos Services</h2>
+  <div class="services-grid">
+    <div class="card">
+      <h3>Retouches</h3>
+      <p>Ajustement, ourlets, fermetures, réparations.</p>
+    </div>
+    <div class="card">
+      <h3>Créations</h3>
+      <p>Vêtements personnalisés selon vos envies.</p>
+    </div>
+    <div class="card">
+      <h3>Cours de couture</h3>
+      <p>Initiation et perfectionnement.</p>
+    </div>
+  </div>
+</section>
+
+<section id="realisations" class="gallery container">
+  <h2>Nos Réalisations</h2>
+  <div class="grid">
+    <img src="img1.jpg" loading="lazy" alt="">
+    <img src="img2.jpg" loading="lazy" alt="">
+    <img src="img3.jpg" loading="lazy" alt="">
+    <img src="img4.jpg" loading="lazy" alt="">
+    <img src="img5.jpg" loading="lazy" alt="">
+    <img src="img6.jpg" loading="lazy" alt="">
+  </div>
+</section>
+
+<section id="apropos" class="about container">
+  <div>
+    <h2>À propos de l’atelier</h2>
+    <p>Atelier artisanal spécialisé dans la couture et les retouches.</p>
+    <a href="https://wa.me/2250700000000" target="_blank" class="btn">Nous écrire</a>
+  </div>
+  <img src="atelier.jpg" loading="lazy" alt="">
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-box">
+    <div>
+      <h2>Contact</h2>
+      <p>📍 Atelier près de chez vous</p>
+      <p>📞 06 00 00 00 00</p>
+      <p>✉️ contact@atelier.com</p>
+
+      <div class="socials">
+        <a href="https://wa.me/2250700000000" target="_blank">💬 WhatsApp</a>
+        <a href="#">📘 Facebook</a>
+        <a href="#">📸 Instagram</a>
+      </div>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button class="btn">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 - Atelier Couture</p>
+</footer>
+<!-- Bouton retour en haut -->
+<button id="backToTop">⬆</button>
+
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>
